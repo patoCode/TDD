@@ -18,12 +18,13 @@ public class TestMain {
 
         String numero;
 
-        Scanner teclado = new Scanner(System.in);
-        System.out.print("Introdusza un numero:");
-        numero = teclado.nextLine();
+//        Scanner teclado = new Scanner(System.in);
+//        System.out.print("Introdusza un numero:");
+//        numero = teclado.nextLine();
         DigitGenerator generador;
+
         generador = new DigitGenerator();
-        String cadena = generador.Convertir(numero, 1, 1);
+        String cadena = generador.Convertir("34", 1, 1);
         System.out.println(cadena);
     }
 
