@@ -52,7 +52,7 @@ public class BlockCommon {
         return cadena;
     }
 
-    public String DrawBlock(BlockCommon b, int ancho, int alto) {
+    public String DrawBlock(BlockCommon b, int ancho, int alto, int resize) {
         String cadena = "";
         for (int i = 0; i < alto; i++) {
             if (i == alto - 1) {
@@ -77,7 +77,9 @@ public class BlockCommon {
                 cadena += b._right;
                 //System.out.print(b._right);
             }
-            //cadena += "\n";
+            if (resize > 0) {
+                cadena += "\n";
+            }
             //System.out.print(" ");
         }
         return cadena;

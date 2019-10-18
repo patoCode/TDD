@@ -74,41 +74,41 @@ public class DigitGenerator {
         cero = new Digit(0, t0, m0, b0);
     }
 
-    public String Convertir(String numero, int ancho, int alto) {
+    public String Convertir(String numero, int ancho, int alto, int resize) {
         String res = "";
         for (int i = 0; i < numero.length(); i++) {
             char letra = numero.charAt(i);
             // TOP
             if (letra == '1') {
-                res += uno.drawTop(ancho, alto);
+                res += uno.drawTop(ancho, alto, resize);
             }
 
             if (letra == '2') {
-                res += dos.drawTop(ancho, alto);
+                res += dos.drawTop(ancho, alto, resize);
             }
             if (letra == '3') {
-                res += tres.drawTop(ancho, alto);
+                res += tres.drawTop(ancho, alto, resize);
             }
             if (letra == '4') {
-                res += cuatro.drawTop(ancho, alto);
+                res += cuatro.drawTop(ancho, alto, resize);
             }
             if (letra == '5') {
-                res += cinco.drawTop(ancho, alto);
+                res += cinco.drawTop(ancho, alto, resize);
             }
             if (letra == '6') {
-                res += seis.drawTop(ancho, alto);
+                res += seis.drawTop(ancho, alto, resize);
             }
             if (letra == '7') {
-                res += siete.drawTop(ancho, alto);
+                res += siete.drawTop(ancho, alto, resize);
             }
             if (letra == '8') {
-                res += ocho.drawTop(ancho, alto);
+                res += ocho.drawTop(ancho, alto, resize);
             }
             if (letra == '9') {
-                res += nueve.drawTop(ancho, alto);
+                res += nueve.drawTop(ancho, alto, resize);
             }
             if (letra == '0') {
-                res += cero.drawTop(ancho, alto);
+                res += cero.drawTop(ancho, alto, resize);
             }
         }
         res += "\n";
@@ -117,34 +117,34 @@ public class DigitGenerator {
             char letra = numero.charAt(i);
             // MID
             if (letra == '1') {
-                res += uno.drawMid(ancho, alto);
+                res += uno.drawMid(ancho, alto, resize);
             }
             if (letra == '2') {
-                res += dos.drawMid(ancho, alto);
+                res += dos.drawMid(ancho, alto, resize);
             }
             if (letra == '3') {
-                res += tres.drawMid(ancho, alto);
+                res += tres.drawMid(ancho, alto, resize);
             }
             if (letra == '4') {
-                res += cuatro.drawMid(ancho, alto);
+                res += cuatro.drawMid(ancho, alto, resize);
             }
             if (letra == '5') {
-                res += cinco.drawMid(ancho, alto);
+                res += cinco.drawMid(ancho, alto, resize);
             }
             if (letra == '6') {
-                res += seis.drawMid(ancho, alto);
+                res += seis.drawMid(ancho, alto, resize);
             }
             if (letra == '7') {
-                res += siete.drawMid(ancho, alto);
+                res += siete.drawMid(ancho, alto, resize);
             }
             if (letra == '8') {
-                res += ocho.drawMid(ancho, alto);
+                res += ocho.drawMid(ancho, alto, resize);
             }
             if (letra == '9') {
-                res += nueve.drawMid(ancho, alto);
+                res += nueve.drawMid(ancho, alto, resize);
             }
             if (letra == '0') {
-                res += cero.drawMid(ancho, alto);
+                res += cero.drawMid(ancho, alto, resize);
             }
         }
         res += "\n";
@@ -153,34 +153,34 @@ public class DigitGenerator {
             char letra = numero.charAt(i);
             // BOTTOM
             if (letra == '1') {
-                res += uno.drawBottom(ancho, alto);
+                res += uno.drawBottom(ancho, alto, resize);
             }
             if (letra == '2') {
-                res += dos.drawBottom(ancho, alto);
+                res += dos.drawBottom(ancho, alto, resize);
             }
             if (letra == '3') {
-                res += tres.drawBottom(ancho, alto);
+                res += tres.drawBottom(ancho, alto, resize);
             }
             if (letra == '4') {
-                res += cuatro.drawBottom(ancho, alto);
+                res += cuatro.drawBottom(ancho, alto, resize);
             }
             if (letra == '5') {
-                res += cinco.drawBottom(ancho, alto);
+                res += cinco.drawBottom(ancho, alto, resize);
             }
             if (letra == '6') {
-                res += seis.drawBottom(ancho, alto);
+                res += seis.drawBottom(ancho, alto, resize);
             }
             if (letra == '7') {
-                res += siete.drawBottom(ancho, alto);
+                res += siete.drawBottom(ancho, alto, resize);
             }
             if (letra == '8') {
-                res += ocho.drawBottom(ancho, alto);
+                res += ocho.drawBottom(ancho, alto, resize);
             }
             if (letra == '9') {
-                res += nueve.drawBottom(ancho, alto);
+                res += nueve.drawBottom(ancho, alto, resize);
             }
             if (letra == '0') {
-                res += cero.drawBottom(ancho, alto);
+                res += cero.drawBottom(ancho, alto, resize);
             }
 
         }

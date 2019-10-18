@@ -24,7 +24,7 @@ public class TestMain {
         DigitGenerator generador;
 
         generador = new DigitGenerator();
-        String cadena = generador.Convertir("34", 1, 1);
+        String cadena = generador.Convertir("000000", 1, 1, 0);
         System.out.println(cadena);
     }
 

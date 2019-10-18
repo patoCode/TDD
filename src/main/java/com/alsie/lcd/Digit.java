@@ -22,25 +22,25 @@ public class Digit {
         this.bottom = bottom;
     }
 
-    public String drawTop(int ancho, int alto) {
+    public String drawTop(int ancho, int alto, int resize) {
         return top.DrawBlock(top, ancho);
     }
 
-    public String drawMid(int ancho, int alto) {
-        return mid.DrawBlock(mid, ancho, alto);
+    public String drawMid(int ancho, int alto, int resize) {
+        return mid.DrawBlock(mid, ancho, alto, resize);
     }
 
     public String drawMid2(int ancho, int alto, String anterior) {
         return mid.DrawBlock2(mid, ancho, alto, anterior);
     }
 
-    public String drawBottom(int ancho, int alto) {
-        return bottom.DrawBlock(bottom, ancho, alto);
+    public String drawBottom(int ancho, int alto, int resize) {
+        return bottom.DrawBlock(bottom, ancho, alto, resize);
     }
 
-    public void draw(int ancho, int alto) {
+    public void draw(int ancho, int alto, int resize) {
 
-        bottom.DrawBlock(bottom, ancho, alto);
+        bottom.DrawBlock(bottom, ancho, alto, resize);
     }
 
 }
